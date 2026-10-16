@@ -415,19 +415,19 @@ BegSr SrBlockUse2;
     Select;
         // Economy Class points
         When (SnakePos_Arr(Result) = 'Y');
-            User_Score += 1;
+            Comp_Score += 1;
             Snak2_Grow += 1;
             ExSr SrRand;
 
         // Raffles Class or Business Class points
         When (SnakePos_Arr(Result) = 'C');
-            User_Score += 8;
+            Comp_Score += 8;
             Snak2_Grow += 1;
             ExSr SrRand;
 
         // First Class points
         When (SnakePos_Arr(Result) = 'F');
-            User_Score += 10;
+            Comp_Score += 10;
             Snak2_Grow += 1;
             ExSr SrRand;
 
